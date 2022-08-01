@@ -6,15 +6,15 @@
   # Key : value
 # Library/dictionary (on is becoming dictionary)
   #key:
-    key1:value1
-    key2:value2
+  #  key1:value1
+  #  key2:value2
 #list
   #key
   # - key1:valuea
-      key2:valueb
+  #   key2:valueb
   # - key1:valuec
-      key1:valued
-name: first_work
+  #   key1:valued
+name: first_job
 on: 
     push:
       branches: 
@@ -23,6 +23,5 @@ jobs:
     first_job:
       runs-on: ubuntu:latest
       steps: 
-        -name: execute single line 
+        - name: execute single line 
           run: cat /etc/os-release
-      
