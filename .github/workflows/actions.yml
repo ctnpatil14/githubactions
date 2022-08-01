@@ -47,7 +47,7 @@ jobs:
             sudo apt-get update -y
             sudo apt-get install -y terraform
             terraform --version
-            aws --version
+            aws --version > data.txt
         - name: upload artifacts
           uses: actions/upload-artifact@v2
           with: 
