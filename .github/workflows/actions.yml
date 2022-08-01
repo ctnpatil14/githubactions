@@ -61,7 +61,6 @@ jobs:
           with:
             name: artifact
             path: ./ 
-            name: read the artifat file
         - name: read the artfacts file
           run: cat data.txt
       needs:
