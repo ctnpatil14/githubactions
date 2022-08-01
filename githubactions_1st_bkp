@@ -16,8 +16,9 @@
   #   key1:valued
 name: first_job
 on: 
-    #run on all the branches
     push:
+      branches: 
+        - main
 jobs:
     first_job:
       runs-on: ubuntu-latest
