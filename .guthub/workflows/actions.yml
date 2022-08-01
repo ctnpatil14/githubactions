@@ -1,0 +1,28 @@
+# This is the sample workflow file.
+# Github actions are written in YAML (Yet another markup language)
+# it's nothing but key and values pair.
+# neing defined in 3 forms.
+# key and value
+  # Key : value
+# Library/dictionary (on is becoming dictionary)
+  #key:
+    key1:value1
+    key2:value2
+#list
+  #key
+  # - key1:valuea
+      key2:valueb
+  # - key1:valuec
+      key1:valued
+name: first_work
+on: 
+    push:
+      branches: 
+        - main
+jobs:
+    first_job:
+      runs-on: ubuntu:latest
+      steps: 
+        -name: execute single line 
+          run: cat /etc/os-release
+      
