@@ -18,6 +18,10 @@ name: first_job
 on: 
 #run on all the branches
     push:
+    workflow_dispatch:
+    pull_request:
+      branches:
+        - main
 jobs:
     first_job:
       runs-on: ubuntu-latest
