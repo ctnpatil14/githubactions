@@ -25,3 +25,14 @@ jobs:
       steps: 
         - name: execute single line 
           run: cat /etc/os-release
+    running_scripts_from_code:
+      runs-on :ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2 #checkout/clone the repo in the runner GITHUB_WORKSPACE UBUNTU for us
+        - name: chmod 755 script.sh && ./script.sh
+        - name: running multiple line 
+          run: |
+            chmod 755 script.sh
+            ./script.sh
+            
+              
