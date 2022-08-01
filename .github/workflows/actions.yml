@@ -36,7 +36,7 @@ jobs:
             chmod 755 script.sh
             ./script.sh 
     installing_packeges:
-      runs_on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
         - name: installing awscli
           run: |
