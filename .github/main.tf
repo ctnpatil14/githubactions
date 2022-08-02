@@ -12,3 +12,4 @@ data "google_compute_disk" "disk1" {
 output "disk" {
     value = data.google_compute_disk.disk1
 }
+
